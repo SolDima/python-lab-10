@@ -1,8 +1,8 @@
 try:
-    with open('students_file.txt', 'w') as file:
-        # Записуємо прізвище та питання
-        file.write("Прізвище: Іваненко\n")
-        file.write("Питання: Як обробляти виключення в Python?\n")
-    print("Файл успішно створений та заповнений.")
+    with open('students_file.txt', 'a', encoding='utf-8') as file:
+        file.write("\nПрізвище: Сидоренко\n")
+        file.write("Відповідь: Декоратори дозволяють змінювати поведінку функції без зміни її коду.\n")
+        file.write("Питання: Що таке генератори в Python?\n")
+    print("Файл оновлено.")
 except Exception as e:
     print(f"Сталася помилка: {e}")
